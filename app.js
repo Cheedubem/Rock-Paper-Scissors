@@ -19,16 +19,16 @@ const playerChoice = getPlayerChoice();
 function playGame(playerChoice, computerChoice) {
   if (playerChoice === computerChoice) {
     console.log("Its a tie!");
-  }
-  elseif(
+  } else if (
     (playerChoice === "rock" && computerChoice === "scissors") ||
     (playerChoice === "paper" && computerChoice === "rock") ||
     (playerChoice === "scissors" && computerChoice === "paper")
-    ) {
-    console.log('You Win!');
-    };
-    else{
-        console.log('You Lose!');
-    }
-    
+  ) {
+    console.log("You Win!");
+  } else {
+    console.log("You Lose!");
+  }
 }
+
+const userChoice = playGame();
+console.log(userChoice);
